@@ -80,6 +80,7 @@ body {
 .perfume-label {
   color: var(--color-grey);
   text-transform: uppercase;
+  margin: 0;
 }
 
 .main-title {
@@ -101,11 +102,13 @@ body {
 
 .sale-price {
   color: var(--color-green-500);
+  margin: 0;
 }
 
 .regular-price {
   color: var(--color-grey);
   text-decoration: line-through;
+  margin: 0;
 }
 
 .add-to-cart-btn {
@@ -118,7 +121,7 @@ body {
   border-radius: 0.5rem;
   border: none;
   background-color: var(--color-green-500);
-  transition: 0.4s ease-in-out;
+  transition: background-color 0.4s ease-in-out;
 }
 
 .cart-icon {
@@ -140,13 +143,15 @@ body {
   .perfume-article {
     display: flex;
     max-width: 37.5rem;
-
   }
 
   .perfume-image {
     border-radius: 0.5rem 0 0 0.5rem;
     width: 18.75rem;
-    height: 100%;
+    object-fit: cover;
+    height: auto;
+    max-height: 100%;
+    align-self: stretch;
   }
 
   .article-content {
